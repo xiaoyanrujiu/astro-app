@@ -1,5 +1,5 @@
 # 基于Node.js镜像构建
-FROM arm64.harbor.shai.ai/infra/node:18.20.5-alpine as build
+FROM node:20.11-alpine3.19 as base
 
 # 设置工作目录
 WORKDIR /app
