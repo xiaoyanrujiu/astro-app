@@ -1,5 +1,7 @@
 ---
 title: 为 Astro 添加暗黑模式
+date: 2024-11-15
+updateDate: 2024-11-15
 category: [前端]
 tags: [Astro, React, Tailwind CSS]
 image: ./cover.jpg

@@ -1,9 +1,13 @@
 ---
 title: 循环变量与闭包
+date: 2024-11-15
+updateDate: 2024-11-15
 tags: [编程, Go, JavaScript, Python, C++]
 category: [编程语言]
 image: ./cover.jpg
 ---
+
+
 ## 起因
 
 在2023年9月19日，Go发布的[1.22版本](https://go.dev/blog/loopvar-preview)，修复了循环变量作用域的问题，最近在用其他语言写代码时，也遇到了类似的问题。于是意识到不同的编程语言对这种情况的处理有所不同，便有了这篇文章。

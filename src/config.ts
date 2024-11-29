@@ -145,10 +145,10 @@ const config: Config = {
   comment: {
     provider: 'giscus',
     options: {
-      repo: 'izmttk/izmttk.github.io',
-      repoId: 'R_kgDOJIxtIQ',
+      repo: 'xiaoyanrujiu/astro-app',
+      repoId: 'R_kgDONWcs8w',
       category: 'General',
-      categoryId: 'DIC_kwDOJIxtIc4CU1cl',
+      categoryId: 'DIC_kwDONWcs884Cktxg',
       mapping: 'pathname',
       reactionsEnabled: '1',
       emitMetadata: '0',
