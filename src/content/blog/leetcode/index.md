@@ -3,7 +3,9 @@ title: LeetCode 力扣
 date: 2024-11-30
 updateDate: 2024-11-30
 tags: [编程语言, JavaScript, LeetCode]
-category: [前端]
+category:
+  - 前端
+  - LeetCode
 image: ./cover.jpg
 ---
 

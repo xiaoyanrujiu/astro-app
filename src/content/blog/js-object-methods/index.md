@@ -3,7 +3,9 @@ title: JavaScript 对象方法
 date: 2024-11-30
 updateDate: 2024-11-30
 tags: [编程语言, JavaScript, Object]
-category: [前端]
+category:
+  - 前端
+  - 数据类型
 image: ./cover.jpg
 ---
 

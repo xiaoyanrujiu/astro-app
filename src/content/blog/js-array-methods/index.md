@@ -3,7 +3,9 @@ title: JavaScript 数组方法
 date: 2024-11-29
 updateDate: 2024-11-29
 tags: [编程语言, JavaScript, Array]
-category: [前端]
+category:
+  - 前端
+  - 数据类型
 image: ./cover.jpg
 ---
 

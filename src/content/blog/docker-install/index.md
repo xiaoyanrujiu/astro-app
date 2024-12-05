@@ -3,7 +3,9 @@ title: Docker 安装
 date: 2024-12-02
 updateDate: 2024-12-02
 tags: [docker]
-category: [Linux]
+category:
+  - Linux
+  - Docker
 image: ./cover.jpg
 ---
 
@@ -99,4 +101,42 @@ docker image ls
 
 ```bash
 docker ps -a
+```
+
+- 重启镜像
+
+```bash
+docker restart image_name
+```
+
+## 3. 镜像操作
+
+- 镜像拉取
+
+```bash
+docker pull image-name
+```
+
+- 构建镜像
+
+```bash
+docker build -t image-name:1.0 .
+```
+
+- 镜像导出
+
+```bash
+docker save -o my-image.tar my-image:1.0
+```
+
+- 镜像导入
+
+```bash
+docker load -i image-name.tar
+```
+
+- 运行镜像
+
+```bash
+docker run -d --restart=always -p 80:80 --name=image-app image-app:1.0
 ```
