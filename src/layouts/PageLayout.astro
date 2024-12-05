@@ -137,6 +137,8 @@ const sidebarConfig: SidebarConfig | false = sidebar ? {
   description={page.description ?? config.description}
   author={page.type === 'post' ? page.post.author.name : config.author}
   favicon={config.favicon}
+  keywords={config.keywords}
+  siteCodeva={config.siteCodeva}
 >
   <slot name="head" slot="head" />
   {hasNavbar && navbar && <Navbar class='px-3 mx-auto lg:max-w-[74rem]' config={navbar} />}

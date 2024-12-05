@@ -6,15 +6,19 @@ export interface Props {
   author?: string;
   generator?: string;
   canonical?: string;
+  keywords?: string;
+  siteCodeva?: string;
 }
 
 const {
   title,
   description,
+  keywords,
   favicon,
   author,
   generator,
-  canonical = decodeURI(Astro.url.href)
+  siteCodeva,
+  canonical = decodeURI(Astro.url.href),
 } = Astro.props;
 import "@fontsource-variable/inter";
 import "@fontsource-variable/fira-code";
@@ -32,33 +36,42 @@ import ProgressBar from "@/components/ProgressBar";
     <link rel="icon" href={favicon} />
     {title && <title>{title}</title>}
     {description && <meta name="description" content={description} />}
+    {keywords && <meta name="keywords" content={keywords} />}
     {author && <meta name="author" content={author} />}
     {generator && <meta name="generator" content={generator} />}
     {canonical && <link rel="canonical" href={canonical} />}
+    {siteCodeva && <meta name="baidu-site-verification" content={siteCodeva} />}
     <script is:inline>
-      (function() {
-        const storedTheme = JSON.parse(window.localStorage.getItem('theme') ?? '"auto"');
+      (function () {
+        const storedTheme = JSON.parse(
+          window.localStorage.getItem("theme") ?? '"auto"'
+        );
         let presetTheme;
-        if (storedTheme === 'auto') {
-          presetTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        if (storedTheme === "auto") {
+          presetTheme = window.matchMedia("(prefers-color-scheme: dark)")
+            .matches
+            ? "dark"
+            : "light";
         } else {
           presetTheme = storedTheme;
         }
-        if (presetTheme === 'dark') {
-          document.documentElement.classList.add('dark');
-          document.documentElement.style.colorScheme = 'dark';
+        if (presetTheme === "dark") {
+          document.documentElement.classList.add("dark");
+          document.documentElement.style.colorScheme = "dark";
         } else {
-          document.documentElement.classList.remove('dark');
-          document.documentElement.style.colorScheme = 'light';
+          document.documentElement.classList.remove("dark");
+          document.documentElement.style.colorScheme = "light";
         }
-      })()
+      })();
     </script>
     <ViewTransitions />
     <slot name="head" />
   </head>
   <body class="min-h-screen flex flex-col">
     <noscript>
-      <div class="pt-16 text-center font-bold text-xl" >Enable JavaScript to run this website.</div>
+      <div class="pt-16 text-center font-bold text-xl">
+        Enable JavaScript to run this website.
+      </div>
     </noscript>
     <slot />
     <ProgressBar client:load transition:persist="progress-bar" />
@@ -68,24 +81,28 @@ import ProgressBar from "@/components/ProgressBar";
 <script>
   // prevent flash when using view transitions in astro
   const setDarkMode = () => {
-    const storedTheme = JSON.parse(window.localStorage.getItem('theme') ?? '"auto"');
+    const storedTheme = JSON.parse(
+      window.localStorage.getItem("theme") ?? '"auto"'
+    );
     let presetTheme;
-    if (storedTheme === 'auto') {
-      presetTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    if (storedTheme === "auto") {
+      presetTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light";
     } else {
       presetTheme = storedTheme;
     }
-    if (presetTheme === 'dark') {
-      document.documentElement.classList.add('dark');
-      document.documentElement.style.colorScheme = 'dark';
+    if (presetTheme === "dark") {
+      document.documentElement.classList.add("dark");
+      document.documentElement.style.colorScheme = "dark";
     } else {
-      document.documentElement.classList.remove('dark');
-      document.documentElement.style.colorScheme = 'light';
+      document.documentElement.classList.remove("dark");
+      document.documentElement.style.colorScheme = "light";
     }
   };
 
   // Runs on initial navigation
   setDarkMode();
   // Runs on view transitions navigation
-  document.addEventListener('astro:after-swap', setDarkMode);
+  document.addEventListener("astro:after-swap", setDarkMode);
 </script>

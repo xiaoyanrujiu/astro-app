@@ -2,16 +2,14 @@
 title: CSS Flex布局使用
 date: 2024-12-05
 updateDate: 2024-12-05
-tags: [CSS]
+tags: [CSS, Flex]
 category:
   - 前端
   - CSS
 image: ./cover.jpg
 ---
 
-CSS Flex 布局使用
-
-# 弹性布局
+# CSS Flex 弹性布局
 
 ## 1. Flex 布局是什么？
 
