@@ -150,7 +150,6 @@ const tokenize: Tokenizer = function(effects, ok, nok) {
     // ...
     return start;
 }
-
 ```
 
 effects 提供了诸多便捷的方法，常用的有

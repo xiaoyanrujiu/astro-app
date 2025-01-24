@@ -193,7 +193,7 @@ const config: Config = {
   },
   algolia: {
     appId: "DQ6GN6DU5W",
-    apiKey: "fca226d5070408fd5d444087074be13c",
+    apiKey: "b30df5589b4e17cd1cb99b7d679eb859",
     indexName: "smilen",
   },
 };
