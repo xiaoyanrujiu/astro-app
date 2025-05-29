@@ -165,5 +165,3 @@ OLLAMA_API_BASE_URL=host.docker.internal:11434
 ![测试模型](./images/test-model.png)
 
 以上表明，Dify 与本地部署的 DeepSeek 大模型已经连通了。
-
-- > 相关链接

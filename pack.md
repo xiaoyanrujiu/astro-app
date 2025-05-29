@@ -2,10 +2,10 @@
 
 ```sh
 # 打包镜像
-docker build -t astro-app:1.3 .
+docker build -t astro-app:1.5 .
 
 # 打包镜像
-docker save -o astro-app.tar astro-app:1.3
+docker save -o astro-app.tar astro-app:1.5
 
 # 加载镜像
 docker load -i astro-app.tar
