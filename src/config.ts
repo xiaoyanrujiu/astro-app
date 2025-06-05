@@ -73,7 +73,7 @@ const config: Config = {
       {
         name: "profile",
         author: "笑颜如旧",
-        description: "生活总会，不期而遇",
+        description: "再见容易，再见很难",
         avatar: import("src/assets/avatar.png"),
         background: import("src/assets/profile-bg.jpg"),
         socialIcons: [

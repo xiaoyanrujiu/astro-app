@@ -1,14 +1,3 @@
----
-title: Ollama + DeepSeek + Dify 安装
-date: 2025-02-28
-updateDate: 2025-02-28
-tags: [docker]
-category:
-  - Linux
-  - Docker
-image: ./cover.jpg
----
-
 Vite+React 项目初始化
 
 ## 1.使用 vite 创建项目
