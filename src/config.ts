@@ -37,11 +37,11 @@ const config: Config = {
         url: url("/friends"),
         icon: "tabler:heart-handshake",
       },
-      {
-        label: "关于",
-        url: url("/about"),
-        icon: "tabler:info-circle",
-      },
+      // {
+      //   label: "关于",
+      //   url: url("/about"),
+      //   icon: "tabler:info-circle",
+      // },
       // {
       //   label: '菜单示例',
       //   icon: 'tabler:menu-2',
